@@ -10,9 +10,12 @@ public interface Constants {
 	
 	final static String currentDir = System.getProperty("user.dir");
 	
-	String BOOK_TYPE[] = {"GL","BB","WB","LB"};
-	String USERS[] = {"SPA","ASA","YMK"};
-	int TOTAL_BOOK_COUNT[] = {30000,25000,1000,1500};
+	String BOOK_TYPE[] = {"GL","BB","SW", "WB"};
+	
+	String USERS[] = {"Admin","MRC","YMK","ASA","ANP","DDL","SPS",
+			"SPA","SMS","AJP","RSK"};
+	
+	int TOTAL_BOOK_COUNT[] = {40000,16000,3400,1530};
 	String BOOK_STATUS[] = {"Available", "Issue", "Paid Fine", "Write off"};
 	
 	File errLogFile = new File(currentDir+"/errLog.txt");

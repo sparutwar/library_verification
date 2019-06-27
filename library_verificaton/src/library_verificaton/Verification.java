@@ -31,12 +31,12 @@ public class Verification extends JFrame implements ActionListener, KeyListener{
 	JButton btnInsert;
 	JLabel lblError;
 
-	DatabaseOperations dbop;
+	ExcelOperations dbop;
 	
 	
 	public static void main(String[] args) {
 		Verification vf = new Verification();
-		vf.dbop = new DatabaseOperations();
+		vf.dbop = new ExcelOperations();
 		
 		vf.dbop.initializeWorkBook();
 		vf.dbop.intializeBooksEntered();
